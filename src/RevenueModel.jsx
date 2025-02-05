@@ -3,10 +3,10 @@ import { Card, CardHeader, CardTitle, CardContent } from "./Card";
 
 const RevenueModel = () => {
   const [users, setUsers] = useState(1);
-  const [months, setMonths] = useState(6);
+  const [months, setMonths] = useState(1);
   const [conversionRate, setConversionRate] = useState(5);
   const [basePrice, setBasePrice] = useState(25);
-  const [adIncome, setAdIncome] = useState(0.67);
+  const [adIncome, setAdIncome] = useState(0.5);
   
   const calculations = {
     freeUsers: Math.floor(users * (1 - conversionRate / 100)),
@@ -39,12 +39,12 @@ const RevenueModel = () => {
           <div>
             <label className="block font-medium">Time Period (months)</label>
             <input 
-              type="range" 
-              min="1"
-              max="12"
-              value={months}
-              onChange={(e) => setMonths(Number(e.target.value))}
-              className="w-full"
+                type="range" 
+                min="1"
+                max="12"
+                value={months}
+                onChange={(e) => setMonths(Number(e.target.value))}
+                className="w-full"
             />
             <p className="text-gray-600">{months} months</p>
           </div>
