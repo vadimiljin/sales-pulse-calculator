@@ -64,8 +64,8 @@ const RevenueModel = () => {
             <label className="block font-medium">Monthly subscription price ($)</label>
             <input 
               type="range" 
-              min="25" 
-              max="200" 
+              min="1" 
+              max="99" 
               value={basePrice} 
               onChange={(e) => setBasePrice(Number(e.target.value))}
               className="w-full"
