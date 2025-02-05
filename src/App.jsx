@@ -1,4 +1,4 @@
-import { RevenueModel } from "./RevenueModel"; // Add curly braces for named export
+import RevenueModel from "./RevenueModel"; // ✅ Default import (no curly braces)
 
 function App() {
   return <RevenueModel />;
