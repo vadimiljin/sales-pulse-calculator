@@ -1,4 +1,4 @@
-import { RevenueModel } from './components/RevenueModel'
+import RevenueModel from "./RevenueModel";
 
 function App() {
   return <RevenueModel />
