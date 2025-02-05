@@ -1,7 +1,7 @@
-import RevenueModel from "./RevenueModel";
+import { RevenueModel } from "./RevenueModel"; // Add curly braces for named export
 
 function App() {
-  return <RevenueModel />
+  return <RevenueModel />;
 }
 
-export default App
+export default App;
