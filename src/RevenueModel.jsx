@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "./Card";
 
 const RevenueModel = () => {
-  const [users, setUsers] = useState(5000);
+  const [users, setUsers] = useState(1);
   const [months, setMonths] = useState(6);
   const [conversionRate, setConversionRate] = useState(5);
   const [basePrice, setBasePrice] = useState(25);
@@ -27,12 +27,12 @@ const RevenueModel = () => {
           <div>
             <label className="block font-medium">Total Users</label>
             <input 
-              type="range" 
-              min="1000" 
-              max="10000" 
-              value={users} 
-              onChange={(e) => setUsers(Number(e.target.value))}
-              className="w-full"
+                type="range" 
+                min="1" // Change from 1000 to 1
+                max="100000" // Change from 10000 to 100000
+                value={users} 
+                onChange={(e) => setUsers(Number(e.target.value))}
+                className="w-full"
             />
             <p className="text-gray-600">{users}</p>
           </div>
